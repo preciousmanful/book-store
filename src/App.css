@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App{
+    background: #150933;
+    color: aliceblue;
+    padding: 15px;
+    
+}
+.App h1{
+    text-align: center;
+}
+.books-container{
+    margin-top: 50px;
+    min-height: max-content;
+    min-height: 45vh;
+}
+.books-container ul{
+    border: 1px solid #000;
+    border-radius: 4px;
+    margin: 5px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: fit-content;
+    font-weight: 600;
+    font-size: 18px;
+}
+::placeholder{
+    font-style: italic;
+}
+.books-container ul li{
+    display: block;
+    background: #ababab;
+    padding: 15px;
+    border-radius: 4px;
+    color: rgb(66, 67, 68);
+    box-shadow: 6px 6px 4px rgb(0, 0, 0);
+}
+
+.books-container ul li span{
+    color: #000;
+}
+
+.books-form-container{
+   position: sticky;
+    bottom: 0;
+    right: 0;
+    margin: 15px 0 15px;
+    width: 100%;
+    background: #150933;
+}
+.books-container ul .add-button{
+    font-weight: 900;
+    font-size: 40px;
+}
+.books-container ul .add-button:hover {
+    background-color: #0f0527;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+   
+}
+
+.books-form-container input{
+    width: 80%;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 6px 0px;
+}
+
+.books-form-container button{
+    padding: 6px;
+    border-radius: 6px;
+    background-color: #ababab;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 18px;
+}
+.books-form-container button:hover{
+    background-color: #0f0527;
+    color: rgb(255, 255, 255);
+}

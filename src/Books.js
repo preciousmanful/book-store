@@ -1,7 +1,7 @@
 import React from 'react';
 
-function Books({ books, changeBooksForm }) {
-
+function Books({ books, changeBooksForm, sign }) {
+  
   return (
     <div className='books-container'>
       <h2>Book List:</h2>
@@ -11,7 +11,7 @@ function Books({ books, changeBooksForm }) {
             <span>{book.name}</span> <br /><i>by </i>{book.author} <br />Category: {book.category}
           </li>
         ))}
-         <li className='add-button' onClick={changeBooksForm}>+</li>
+         <li className='add-button' onClick={changeBooksForm}>{ sign }</li>
       </ul>
 
 
